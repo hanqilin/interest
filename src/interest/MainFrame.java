@@ -279,7 +279,6 @@ public class MainFrame extends JFrame implements ActionListener{
 			String strPrincipal = jt1.getText() ;
 			String strRate = jt2.getText() ;
 			String strTime = jt3.getText() ;
-//          System.out.print("1111111111111");
 			SingleInterest single = new SingleInterest(strRate, strPrincipal, strTime);
 			double f = single.Interest();
 			jtConsequence.setText(String.valueOf(f));
@@ -306,13 +305,11 @@ public class MainFrame extends JFrame implements ActionListener{
 			String strInvestment = jt1.getText() ;
 			String strRate = jt2.getText() ;
 			String strTime = jt3.getText() ;
-			//String strCount = jt4.getText() ;
 			PeriodicIncome compound = new PeriodicIncome(strRate, strInvestment, strTime);
 			double f = compound.Interrest();
 			jtConsequence.setText(String.valueOf(f));
 			
 		} else if(jlTitle.getText() == "±¾½ð¹ÀËã") {
-			//System.out.print("---------");
 			String strEarnings = jt1.getText() ;
 			String strRate = jt2.getText() ;
 			String strTime = jt3.getText() ;
@@ -325,7 +322,6 @@ public class MainFrame extends JFrame implements ActionListener{
 			String strLoan = jt1.getText() ;
 			String strRate = jt2.getText() ;
 			String strTime = jt3.getText() ;
-//          System.out.print("1111111111111");
 			Refund single = new Refund(strRate, strLoan, strTime);
 			double f = single.Interrest();
 			jtConsequence.setText(String.valueOf(f));

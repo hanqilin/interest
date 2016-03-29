@@ -39,14 +39,14 @@ public class Test {
 	@org.junit.Test
 	public void testBestProject () {
 		double f = new BestProject("200","100","1","1").Interrest();
-
 		assertEquals(1, (int)f);
 	}
 	@org.junit.Test
 	public void testRefund () {
 		double f = new Refund("0.87","1200","3").Interrest();
-//		System.out.print((int)f);
 		assertEquals(94, (int)f);
 	}
+	
+	
 
 }
